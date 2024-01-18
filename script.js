@@ -21,3 +21,8 @@ case "yyyy-mm-dd":
         .reverse()
         .join("-");
     break;
+    // Case for "mm-dd-yyyy-h-mm" format
+    case "mm-dd-yyyy-h-mm":
+        // Display date, hours, and minutes
+        currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
+        break;
