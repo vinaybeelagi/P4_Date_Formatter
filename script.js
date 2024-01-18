@@ -13,3 +13,11 @@ currentDateParagraph.textContent = formattedDate;
 // Event listener for changes in date options
 dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
+// Case for "yyyy-mm-dd" format
+case "yyyy-mm-dd":
+    // Reverse the date format
+    currentDateParagraph.textContent = formattedDate
+        .split("-")
+        .reverse()
+        .join("-");
+    break;
