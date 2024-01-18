@@ -26,3 +26,9 @@ case "yyyy-mm-dd":
         // Display date, hours, and minutes
         currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
         break;
+        // Default case: fallback to the original formatted date
+        default:
+            currentDateParagraph.textContent = formattedDate;
+            break;
+    }
+});
